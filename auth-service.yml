@@ -1,0 +1,26 @@
+server:
+  port: 7090
+  servlet:
+    context-path: /auth
+
+jwt:
+  auth:
+    converter:
+      resource-id: authenticationClientId
+
+keycloak:
+  realm: reze-music
+  domain: keycloak.ignacio.com
+  adminClientId: admin-cli
+  adminClientSecret: secret
+  urls:
+    auth: https://${keycloak.domain}
+
+spring:
+  profile:
+    active: production
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://${keycloak.domain}/realms/${keycloak.realm}
