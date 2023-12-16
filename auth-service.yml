@@ -12,7 +12,7 @@ keycloak:
   realm: reze-music
   domain: keycloak.ignacio.com
   adminClientId: admin-cli
-  adminClientSecret: secret
+  adminClientSecret: iZ8jEvr5P5hIpJyUaDRlQEFo5RcbzzCb
   urls:
     auth: https://${keycloak.domain}
 
