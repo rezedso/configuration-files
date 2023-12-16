@@ -10,7 +10,7 @@ jwt:
 
 keycloak:
   realm: reze-music
-  domain: localhost
+  domain: localhost:8080
 #  domain: keycloak.ignacio.com
   adminClientId: admin-cli
   adminClientSecret: iZ8jEvr5P5hIpJyUaDRlQEFo5RcbzzCb
